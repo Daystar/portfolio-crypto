@@ -7,11 +7,10 @@
 The proposed website employs the Coingecko API, a widely-used source of data for cryptocurrency information. The API grants access to an extensive array of data on thousands of cryptocurrencies, including current and historical pricing, trading volume, market capitalization, and other critical metrics. Leveraging this API, the website delivers real-time data and trends on the cryptocurrency market to its users. By offering comprehensive and current data on cryptocurrency metrics, the website enables its users to make informed decisions in this rapidly evolving space.
 </p>
 
-<<<<<<< HEAD
+
 👉 Live Link for the website: <a href='https://portfolio-crypto-rho.vercel.app/' >Link</a>
 =======
-👉 Live Link for the website: <a href='https://portfolio-crypto-rho.vercel.app/' target = "_blank" rel="noreferrer">Link</a>
->>>>>>> a590cc5abf25f78ef3cd99ec8f9868b28df828ae
+
 
 <h3>Build with:</h3>
 
