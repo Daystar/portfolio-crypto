@@ -25,7 +25,7 @@ The proposed website employs the Coingecko API, a widely-used source of data for
 <h3 align='center'>Home Page 🏡</h3>
 
 <div align='center'>
-<img src='https://github.com/Daystar/portfolio-crypto/blob/master/crypto_home.png'/>
+<img src='https://github.com/Daystar/portfolio-crypto/blob/main/crypto_home.png'/>
 
 </div>
 
