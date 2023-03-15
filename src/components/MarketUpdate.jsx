@@ -6,11 +6,11 @@ function MarketUpdate() {
   const [currentPage, setCurrentPage] = useState([]);
   const [apiLoad, setApiLoad] = useState(true);
 
-  const url = `https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=10&page=${currentPage}&sparkline=false
+  const url = `https://api.coingecko.com/api/v3/coins/markets?vs_currency=inr&order=market_cap_desc&per_page=10&page=${currentPage}&sparkline=false
   `;
 
   function numberWithCommas(x) {
-    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    return x.toString().replace(/\B(?=(?:(\d\d)+(\d)(?!\d))+(?!\d))/g, ',');
   }
 
   useEffect(() => {
@@ -92,7 +92,7 @@ function MarketUpdate() {
                     <span>
                       <img src={item.image} alt={item.name} /> {item.name}
                     </span>
-                    <p>{"$ " + item.current_price.toFixed(2)}</p>
+                    <p>{"₹ " + numberWithCommas(item.current_price.toFixed(2))}</p>
                     <p
                       className={
                         "slider-coin__price " +
@@ -103,7 +103,7 @@ function MarketUpdate() {
                     >
                       {item.price_change_percentage_24h?.toFixed(2) + " %"}
                     </p>
-                    <p>{"$ " + numberWithCommas(item.market_cap)}</p>
+                    <p>{"₹ " + numberWithCommas(item.market_cap)}</p>
                   </Link>
                 ))}
               </div>

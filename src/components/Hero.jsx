@@ -7,11 +7,11 @@ function Hero() {
   const [data, setData] = useState([]);
   const [coinsLoad, setCoinsLoad] = useState(true);
 
-  const url = `https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=4&page=1&sparkline=false
+  const url = `https://api.coingecko.com/api/v3/coins/markets?vs_currency=inr&order=market_cap_desc&per_page=4&page=1&sparkline=false
   `;
 
   function numberWithCommas(x) {
-    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    return x.toString().replace(/\B(?=(?:(\d\d)+(\d)(?!\d))+(?!\d))/g, ',');
   }
 
   useEffect(() => {
@@ -75,7 +75,7 @@ function Hero() {
                     </span>
                   </p>
                   <p className="slider-coin__price">
-                    {"$ " + numberWithCommas(item.current_price?.toFixed(2))}
+                    {"₹ " + numberWithCommas(item.current_price?.toFixed(2))}
                   </p>
                 </Link>
               ))}

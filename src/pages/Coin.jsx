@@ -61,9 +61,9 @@ function Coin() {
                   <span>Price:</span>
                   <p className={"green-text"}>
                     {coin.market_data
-                      ? "$" +
+                      ? "₹" +
                       numberWithCommas(
-                        coin.market_data.current_price.usd.toFixed(2)
+                        coin.market_data.current_price.inr.toFixed(2)
                       )
                       : null}
                   </p>
